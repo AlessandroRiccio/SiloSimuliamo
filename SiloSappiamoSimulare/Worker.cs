@@ -37,7 +37,7 @@ namespace SiloSappiamoSimulare
             float[] noiseValues4 = SimplexNoise.Noise.Calc1D(1000, 0.022f);
 
             List<Silo> silos = new List<Silo>();
-            silos.Add(new Silo(21, 320000, 280000));
+            silos.Add(new Silo(21, 320000, 280000)); //Oooh dio cane devi chiedere prima di cambiare
             silos.Add(new Silo(22, 380000, 100200));
             silos.Add(new Silo(23, 480000, 450000));
             silos.Add(new Silo(24, 630000, 80000));
