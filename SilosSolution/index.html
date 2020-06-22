@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SilosController</title>
+</head>
+<body>
+
+    <div>
+        <h2>Silos</h2>
+        <ul id="silos" />
+    </div>
+    <div>
+        <h2>Search by ID</h2>
+        <input type="text" id="silosId" size="5" />
+        <input type="button" value="search" onclick="find();" />
+        <p id="siloModel"
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        var uri = 'api/silos';
+        $(document).ready(function () {
+            $.getJSON(uri)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem(item) }).appendTo($('#silos'));
+                    });
+                });
+        });
+        function formatItem(item) {
+            return 'Silo n.'+ item.SilosId + ', Capacità = ' + item.Capacity + ', Livello = ' + item.Filling;
+        }
+        function find() {
+            var id = $('#silosId').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#siloModel').text(formatItem(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#siloModel').text('Error: ' + err);
+                });
+        }
+        </script>
+</body >
+</html >
