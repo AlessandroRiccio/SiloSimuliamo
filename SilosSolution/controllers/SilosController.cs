@@ -11,8 +11,6 @@ using System.Web.Http;
 namespace SilosSolution.controllers
 {
     //Test commit commento
-
-    //Modifica da committare
     public class SilosController : ApiController
     {
         static HttpClient client = new HttpClient();
