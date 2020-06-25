@@ -19,6 +19,7 @@ namespace SiloSimuliamo
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            //Test commit nuova soluzione
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
