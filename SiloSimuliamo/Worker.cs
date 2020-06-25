@@ -19,7 +19,7 @@ namespace SiloSimuliamo
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            //Test commit nuova soluzione
+            //Quello che viene scritto dentro a questo while viene ripetuto ogni tot millisecondi
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
