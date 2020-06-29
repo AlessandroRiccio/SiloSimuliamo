@@ -1,24 +1,32 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
-namespace SiloSimuliamo
+namespace Simulatore
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Console.WriteLine("Simulatore Sensori");
+
+            start();
+
+            Console.ReadKey();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureServices((hostContext, services) =>
-                {
-                    services.AddHostedService<Worker>();
-                });
+        static async void start()
+        {
+            List<Silos> silos = new List<Silos>();
+            silos.Add(new Silos(21, 5, 1.5));
+            silos.Add(new Silos(22, 8, 2.4));
+            silos.Add(new Silos(23, 7, 1.5));
+            silos.Add(new Silos(33, 12, 2.64));
+
+            while (true)
+            {
+                await Task.Delay(500);
+            }
+        }
     }
 }

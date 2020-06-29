@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloSimuliamo", "SiloSimuliamo\SiloSimuliamo.csproj", "{619B8050-2FAD-4A6A-B6B4-FFE503888250}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloSimuliamo", "SiloSimuliamo\SiloSimuliamo.csproj", "{45438582-40D6-4360-9C2B-B1A6E4C3A2B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{619B8050-2FAD-4A6A-B6B4-FFE503888250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{619B8050-2FAD-4A6A-B6B4-FFE503888250}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{619B8050-2FAD-4A6A-B6B4-FFE503888250}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{619B8050-2FAD-4A6A-B6B4-FFE503888250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45438582-40D6-4360-9C2B-B1A6E4C3A2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45438582-40D6-4360-9C2B-B1A6E4C3A2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45438582-40D6-4360-9C2B-B1A6E4C3A2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45438582-40D6-4360-9C2B-B1A6E4C3A2B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {68B28894-5E7E-4AC4-840C-7B477F0C57B9}
+		SolutionGuid = {FED495CC-A7B9-4810-95EE-17DBFE6A6DB7}
 	EndGlobalSection
 EndGlobal
